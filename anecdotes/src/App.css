@@ -1,0 +1,118 @@
+.app-container {
+  width: 100%;
+  max-width: 1126px;
+  min-height: 320px;
+  margin: 16px auto;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #333333;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 14px 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: 0 0 45px 0;
+  color: #cccccc;
+}
+
+.anecdote {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.quote {
+  font-size: 22px;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  color: #ffffff;
+}
+
+.votes {
+  font-size: 17px;
+  margin: 0;
+  color: #cccccc;
+}
+
+.description {
+  font-size: 15px;
+  color: #bbbbbb;
+  margin: 35px 0 20px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.controls button {
+  border: none;
+  border-radius: 25px;
+  padding: 9px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.vote-button {
+  background-color: #2563eb;
+  color: white;
+}
+
+.vote-button:hover {
+  background-color: #1d4ed8;
+}
+
+.next-button {
+  background-color: #006b43;
+  color: #00e68a;
+}
+
+.next-button:hover {
+  background-color: #008653;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 18px 12px;
+  }
+
+  .quote {
+    font-size: 18px;
+  }
+
+  .controls {
+    flex-wrap: wrap;
+  }
+}
+
+.most-voted {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.most-voted h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.most-voted p {
+  margin: 10px 0;
+}
